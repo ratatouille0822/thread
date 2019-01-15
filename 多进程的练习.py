@@ -3,13 +3,15 @@ import time
 
 
 def demo1():
-    print("这是demo1")
-    time.sleep(1)
+    while True:
+        print("这是demo1")
+        time.sleep(1)
 
 
 def demo2():
-    print("这是demo2")
-    time.sleep(1)
+    while True:
+        print("这是demo2")
+        time.sleep(1)
 
 
 def main():
