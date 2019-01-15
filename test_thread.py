@@ -1,4 +1,5 @@
 import time
+import threading as th
 
 
 def sing():
@@ -14,8 +15,13 @@ def dance():
 
 
 def main():
-    sing()
-    dance()
+    t1 = th.Thread(target=sing)
+    t2 = th.Thread(target=dance)
+    t1.start()
+    t2.start()
+
+    # sing()
+    # dance()
 
 
 if __name__ == "__main__":
